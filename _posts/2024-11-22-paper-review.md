@@ -39,9 +39,9 @@ tags:
 
 ### Architecture
 - Comparision w/ AlexNet
-    ![AlexNet/VGGNet](./pics_11_22/AlexNetvs.png)
+    ![AlexNet/VGGNet](/img/pics_11_22/AlexNetvs.png)
 - VGG19 Config
-    ![VGG](./pics_11_22/VGG.png)
+    ![VGG](/img/pics_11_22/VGG.png)
 
 |  | (output) size | filter size | # filter | padding  | stride | activation  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -88,8 +88,8 @@ tags:
 
 ### Configuration 
 - A-E only differ in depth 
-    ![ConfigAtoE](/_posts/pics_11_22/configAtoE.png)
-    ![numParams](/_posts/pics_11_22/numParams.png)
+    ![ConfigAtoE](/img/pics_11_22/configAtoE.png)
+    ![numParams](/img/pics_11_22/numParams.png)
 
 ### Discussion
 
@@ -97,8 +97,8 @@ tags:
     - Very small 3 x 3 receptive fields
         - stack of three 3 x 3 conv layers has an effective receptive field of 7 x 7
             - Ex
-                ![one 7 x 7](/_posts/pics_11_22/receptive7x7.png)
-                ![three 3 x 3](/_posts/pics_11_22/receptive3x3.png)
+                ![one 7 x 7](/img/pics_11_22/receptive7x7.png)
+                ![three 3 x 3](/img/pics_11_22/receptive3x3.png)
                 
         - Incorporate 3 non-linear rectification layers instead of a single one → make decision function more discriminative
         - Decrease # params
@@ -185,8 +185,8 @@ tags:
             - Can be seen as training set augmentation; **scale jittering**
             - **Train multi-scale models by fine-tuning all layers of a single-scale model with the same config, pre-trained w/ fixed S = 384**
             - Ex
-                ![deer S = 256](/_posts/pics_11_22/deer256.png)
-                ![deer S = 512](/_posts/pics_11_22/deer512.png)
+                ![deer S = 256](/img/pics_11_22/deer256.png)
+                ![deer S = 512](/img/pics_11_22/deer512.png)
                 
 
 ### Testing
@@ -204,7 +204,7 @@ tags:
         - Use trained weights of fc layers from trained ConvNet
     - Output: **class score map**
 3. Class score map
-    ![class score map](/_posts/pics_11_22/classScoreMap.png)
+    ![class score map](/img/pics_11_22/classScoreMap.png)
 
     - Class score map
         - Contain scores per class at each position of input img
@@ -242,7 +242,7 @@ tags:
 - Evaluation: top-1, top-5 error
 
 ### Single Scale Evaluation 
-![single scale eval](/_posts/pics_11_22/singleTestScale.png)
+![single scale eval](/img/pics_11_22/singleTestScale.png)
 - Test img size Q
     1. Fixed S → Q = S
     2. Jittered S → $Q = 0.5(S_{min} + S_{max})$
@@ -263,7 +263,7 @@ tags:
 - Scale jittering at **training time** leads to significantly better results than fixed S
 
 ### Multi-Scale Evaluation 
-![multi scale eval](/_posts/pics_11_22/multipleTestScale.png)
+![multi scale eval](/img/pics_11_22/multipleTestScale.png)
 - Scale jittering
     1. Run a model over several rescaled vers of a test image (diff val of Q)
     2. Calculate class posterior of each rescaled img
@@ -277,15 +277,15 @@ tags:
 - Scale jittering at test time leads to better performance
 
 ### Multi Crop Evaluation
-![multi crop eval](/_posts/pics_11_22/multipleCrop.png)
+![multi crop eval](/img/pics_11_22/multipleCrop.png)
 - Dense & multi-crop eval are complementary → combination outperforms each of them
 
 ### ConvNet Fusion
-![convnet fusion](/_posts/pics_11_22/multipleFusion.png)
+![convnet fusion](/img/pics_11_22/multipleFusion.png)
 - Combine outputs of several models by averaging their softmax class posteriors 
 
 ### Comparison with the State of Art
-![state of art](/_posts/pics_11_22/stateofArt.png)
+![state of art](/img/pics_11_22/stateofArt.png)
 
 ---
 ## 5. Conclusion
