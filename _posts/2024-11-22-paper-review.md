@@ -4,7 +4,6 @@ title:        "Very Deep Convolutional Networks for Large-Scale Image Recognitio
 author:       "박서연"
 header-style: text
 catalog:      true
-mathjax:    true
 tags:
     - CNN
     - VGG
@@ -112,7 +111,7 @@ tags:
         - GoogLeNet: top performing entry of the ILSVRC-2014 classification task
         - Both are based on very deep ConvNets (22 weight layers) & small conv filters (GoolLeNet used 3 x 3, 1 x 1, 5 x 5)
         - GoogLeNet’s network topology is more complex & spatial resolution of the feature maps is reduced more aggressively in the 1st layers to decrease the amount of computation
-        - VGGNet is outperforming GoogLeNet in terms of single-net classification accuracy ㅋㅋㅋ
+        - VGGNet is outperforming GoogLeNet in terms of single-net classification accuracy 
 
 ---
 
