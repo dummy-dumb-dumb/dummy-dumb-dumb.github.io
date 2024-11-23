@@ -271,7 +271,7 @@ tags:
     3. Average the resulting class posteriors
 - W/ fixed S
     - Large discrepancy btw training/testing scales → drop in performance
-    - Eval w/ 3 test img sizes → $Q = \{{S − 32, S, S + 32}\}$
+    - Eval w/ 3 test img sizes → $Q = \{S − 32, S, S + 32\}$
 - W/ jittered S
     - Can deal w/ wide range of Q
     - $Q = \{S_{min}, 0.5(S_{min} + S_{max}), S_{max}\}$
