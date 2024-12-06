@@ -2,7 +2,7 @@
 layout:       post
 title:        "Very Deep Convolutional Networks for Large-Scale Image Recognition"
 author:       
-    - "박서연"
+    - "박서연", 
     - "김정현"
 header-style: text
 catalog:      true
