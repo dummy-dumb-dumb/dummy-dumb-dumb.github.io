@@ -1,7 +1,9 @@
 ---
 layout:       post
 title:        "Very Deep Convolutional Networks for Large-Scale Image Recognition"
-author:       "박서연"
+author:       
+    - "박서연"
+    - "김정현"
 header-style: text
 catalog:      true
 tags:
@@ -292,4 +294,5 @@ tags:
 
 - Evaluation of deep convolutional networks for large scale image classification
 
-
+---
+# 김정현
